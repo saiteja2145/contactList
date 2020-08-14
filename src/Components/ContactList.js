@@ -111,7 +111,6 @@ const ContactList = () => {
       setCurrentUserMsg(newMessageData);
       setMessages(newMessages);
     }
-
     setMessage("");
   };
 
@@ -153,6 +152,7 @@ const ContactList = () => {
           addEditUser={addEditUser}
           addUser={addUser}
           editUser={editUser}
+          setAddUser={setAddUser}
         />
       </div>
       <div className="container">

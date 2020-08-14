@@ -4,7 +4,14 @@ import Button from "antd/es/button";
 import { v4 } from "uuid";
 import { useEffect } from "react";
 
-const AddUser = ({ colors, randomNumber, addEditUser, addUser, editUser }) => {
+const AddUser = ({
+  colors,
+  randomNumber,
+  addEditUser,
+  addUser,
+  editUser,
+  setAddUser,
+}) => {
   const [visible, setVisible] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -23,7 +30,6 @@ const AddUser = ({ colors, randomNumber, addEditUser, addUser, editUser }) => {
 
   useEffect(() => {
     if (addUser) {
-      console.log(addUser);
       setFullName(addUser.fullName);
       setEmail(addUser.email);
       setPhone(addUser.phone);
@@ -104,6 +110,7 @@ const AddUser = ({ colors, randomNumber, addEditUser, addUser, editUser }) => {
         onCancel={() => {
           setVisible(false);
           clearData();
+          setAddUser(null);
         }}
         footer={[
           <Button key="submit" type="primary" onClick={handleSubmit}>
