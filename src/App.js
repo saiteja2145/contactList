@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
 import "antd/dist/antd.css";
+import "./App.css";
 import ContactList from "./Components/ContactList";
 
 function App() {

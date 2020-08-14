@@ -89,15 +89,15 @@ const AddUser = ({ colors, randomNumber, addEditUser, addUser, editUser }) => {
 
   return (
     <div>
-      <Button
-        type="primary"
+      <button
+        className="btn-primary"
         onClick={(e) => {
           editUser(e, null);
           setVisible(true);
         }}
       >
-        Add User
-      </Button>
+        + Add User
+      </button>
       <Modal
         visible={visible}
         title="User Details"

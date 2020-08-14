@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .add__user {
@@ -209,4 +209,23 @@ td {
   table td:last-child {
     border-bottom: 0;
   }
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #ff8075, #fe6c99);
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.fullName {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.email {
+  font-size: 0.8rem;
 }

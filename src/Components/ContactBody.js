@@ -25,8 +25,8 @@ const ContactBody = ({
               <h3 className="contact__avatar--letter">{contact.avatarName}</h3>
             </div>
             <div>
-              <h2>{contact.fullName}</h2>
-              <h5>{contact.email}</h5>
+              <h2 className="fullName">{contact.fullName}</h2>
+              <h5 className="email">{contact.email}</h5>
             </div>
           </div>
         </td>
