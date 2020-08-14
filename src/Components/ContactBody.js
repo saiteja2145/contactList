@@ -25,7 +25,7 @@ const ContactBody = ({
               <h3 className="contact__avatar--letter">{contact.avatarName}</h3>
             </div>
             <div>
-              <h2 style={{ margin: 0 }}>{contact.fullName}</h2>
+              <h2>{contact.fullName}</h2>
               <h5>{contact.email}</h5>
             </div>
           </div>

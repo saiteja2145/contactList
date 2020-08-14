@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./ContactList.css";
+
 import ContactView from "./ContactView";
 import { v4 } from "uuid";
 import AddUser from "./AddUser";
@@ -159,11 +159,21 @@ const ContactList = () => {
         <table>
           <thead>
             <tr>
-              <th>Full Name</th>
-              <th>Company Name</th>
-              <th>Phone</th>
-              <th>Edit</th>
-              <th>Message</th>
+              <th>
+                <h3>Full Name</h3>
+              </th>
+              <th>
+                <h3>Company Name</h3>
+              </th>
+              <th>
+                <h3>Phone</h3>
+              </th>
+              <th>
+                <h3>Edit</h3>
+              </th>
+              <th>
+                <h3>Message</h3>
+              </th>
             </tr>
           </thead>
           <tbody>

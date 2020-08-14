@@ -18,7 +18,7 @@ const ContactView = ({ contact, color, colors }) => {
       <div className="view__details">
         <ContactDetail name="Full Name" value={contact.fullName} />
         <ContactDetail name="Email" value={contact.email} />
-        <ContactDetail name="phone" value={contact.phone} />
+        <ContactDetail name="Phone" value={contact.phone} />
         <ContactDetail name="Company Name" value={contact.companyName} />
       </div>
     </div>
